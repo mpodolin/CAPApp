@@ -6,6 +6,7 @@ from django.db import models
 class Event(models.Model):
     # Event properties
     title = models.CharField(max_length=200, default='Weekly Meeting')
+    location = models.CharField(max_length=200, blank=True)
     weekly_meeting = models.BooleanField(default=True)
     activities = models.TextField(blank=True)
     start = models.DateTimeField(default=timezone.now, blank=True)

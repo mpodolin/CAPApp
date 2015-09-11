@@ -5,6 +5,7 @@ from events import views
 
 urlpatterns = [
     url(r'^calldown/', views.call_down, name='call_downs'),
+    url(r'^schedule/', views.schedule, name='schedule'),
 #    url(r'^profile/', views.profile, name='profile'),
 #    url(r'^pt/', views.pt, name='pt'),
 ]

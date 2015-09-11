@@ -2,19 +2,33 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Call Down</title>
+    <title>Schedule</title>
 </head>
 <body>
- <p>
      {% if user.is_authenticated %}
-        UOD - Cadets {{ uod_cadets }} </br>
-        UOD - Staff {{ uod_staff }} </br>
-        Start Time {{ start }} </br>
-        End Time {{ end }} </br>
-        Events {{ activities|linebreaksbr }} </br>
+         <h1>{{ first_month_name }}</h1>
+        {% for event in first_month_meeting %}
+            <p>{{ event.name }}</p></br>
+            <p>{{ event.start|date: "j" }} at {{ event.start.time }}</p></br>
+            <p>At {{ event.location }}</p>
+        {% endfor %}
+
+        <h1>{{ second_month_name }}</h1>
+        {% for event in second_month_meeting %}
+            <p>{{ event.name }}</p></br>
+            <p>{{ event.start.day }} at {{ event.start.time }}}</p></br>
+            <p>At {{ event.location }}</p>
+        {% endfor %}
+
+        <h1>{{ third_month_name }}</h1>
+        {% for event in third_month_meeting %}
+            <p>{{ event.name }}</p></br>
+            <p>{{ event.start.day }} at {{ event.start.time }}</p></br>
+            <p>At {{ event.location }}</p>
+        {% endfor %}
      {% else %}
         You're out
      {% endif %}
- </p>
+
 </body>
 </html>
