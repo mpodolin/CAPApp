@@ -8,23 +8,26 @@
      {% if user.is_authenticated %}
          <h1>{{ first_month_name }}</h1>
         {% for event in first_month_meeting %}
-            <p>{{ event.name }}</p></br>
-            <p>{{ event.start|date:"jS" }} at {{ event.start.time }}</p></br>
+            <p>{{ event.name }}</p>
+            <p>{{ event.start|date:"jS" }} at {{ event.start.time }}</p>
             <p>At {{ event.location }}</p>
+            </br>
         {% endfor %}
 
         <h1>{{ second_month_name }}</h1>
         {% for event in second_month_meeting %}
-            <p>{{ event.name }}</p></br>
-            <p>{{ event.start|date:"jS" }} at {{ event.start.time }}}</p></br>
+            <p>{{ event.name }}</p>
+            <p>{{ event.start|date:"jS" }} at {{ event.start.time }}}</p>
             <p>At {{ event.location }}</p>
+            </br>
         {% endfor %}
 
         <h1>{{ third_month_name }}</h1>
         {% for event in third_month_meeting %}
-            <p>{{ event.name }}</p></br>
-            <p>{{ event.start|date:"jS" }} at {{ event.start.time }}</p></br>
+            <p>{{ event.name }}</p>
+            <p>{{ event.start|date:"jS" }} at {{ event.start.time }}</p>
             <p>At {{ event.location }}</p>
+            </br>
         {% endfor %}
      {% else %}
         You're out
