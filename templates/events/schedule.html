@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Call Down</title>
+</head>
+<body>
+ <p>
+     {% if user.is_authenticated %}
+        UOD - Cadets {{ uod_cadets }} </br>
+        UOD - Staff {{ uod_staff }} </br>
+        Start Time {{ start }} </br>
+        End Time {{ end }} </br>
+        Events {{ activities|linebreaksbr }} </br>
+     {% else %}
+        You're out
+     {% endif %}
+ </p>
+</body>
+</html>

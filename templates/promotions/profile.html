@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+ <p>
+     {% if user.is_authenticated %}
+        Last Name {{ last_name }} </br>
+        Cap ID {{ capid }} </br>
+        Rank {{ rank }} </br>
+        Weeks in Rank {{ time_in_grade }} </br>
+        time joined {{ time }}
+     {% else %}
+        You're out
+     {% endif %}
+ </p>
+</body>
+</html>

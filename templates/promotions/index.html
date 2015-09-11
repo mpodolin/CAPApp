@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Promotion Requirements</title>
+</head>
+<body>
+ <p>
+     {% if user.is_authenticated %}
+        {% if user.leadership_test != 'N' %}
+            {{ leadership }} Leadership </br>
+        {% endif %}
+        {% if user.aerospace_test != 'N' %}
+            {{ aerospace }} Aerospace </br>
+        {% endif %}
+        {% if user.drill_test != 'N' %}
+            {{ drill }} Drill Test </br>
+        {% endif %}
+        {% if user.fitness_test != 'N' %}
+            {{ fitness }} PT Test </br>
+        {% endif %}
+        {% if user.character_development != 'N' %}
+            {{ character }} Character Dev </br>
+        {% endif %}
+        {% if user.sda != 'N' %}
+            {{ sda }} SDA </br>
+        {% endif %}
+        {% if user.speech != 'N' %}
+            {{ speech }} Speech </br>
+        {% endif %}
+        {% if user.essay != 'N' %}
+            {{ essay }} Essay </br>
+        {% endif %}
+     {% else %}
+        You're out
+     {% endif %}
+ </p>
+</body>
+</html>

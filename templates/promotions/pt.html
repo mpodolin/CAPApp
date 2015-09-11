@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+ <p>
+     {% if user.is_authenticated %}
+        Sit+Reach {{ sit_and_reach }} </br>
+        Sit Ups {{ sit_ups }} </br>
+        Push Ups {{ push_ups }} </br>
+        Mile {{ mile_run }} </br>
+     {% else %}
+        You're out
+     {% endif %}
+ </p>
+</body>
+</html>
