@@ -1,0 +1,19 @@
+{% extends 'new_base.html' %}
+
+{% block content %}
+ <p>
+     {% if user.is_authenticated %}
+        <p>{{ meeting_scheduled }}</p>
+        {% if meeting_scheduled %}
+            UOD - Cadets {{ event.uod_cadets }} </br>
+            UOD - Staff {{ event.uod_staff }} </br>
+            Start Time {{ event.start }} </br>
+            End Time {{ event.end }} </br>
+            Events {{ event.activities|linebreaksbr }} </br>
+        {% endif %}
+     {% else %}
+        You're out
+     {% endif %}
+ </p>
+
+{% endblock %}

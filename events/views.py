@@ -14,9 +14,18 @@ def call_down(request):
     next_meeting = Event.objects.filter(squadron__iexact=current_squadron)
     next_meeting = next_meeting.filter(weekly_meeting__exact=True)
     next_meeting = next_meeting.filter(start__gte=timezone.now())
-    next_meeting = next_meeting.order_by('start')[0]
+    if len(next_meeting) == 0:
+        meeting_scheduled = False
+        next_meeting = []
+    elif len(next_meeting) > 0:
+        meeting_scheduled = True
+        next_meeting = next_meeting = next_meeting.order_by('start')[0]
+    else:
+        meeting_scheduled = "error!"
+        next_meeting = []
 
     # Render info
+    """
     context_dict = {'uod_cadets': next_meeting.uod_cadets,
                     'uod_staff': next_meeting.uod_staff,
                     'uod_senior': next_meeting.uod_senior,
@@ -24,7 +33,10 @@ def call_down(request):
                     'end': next_meeting.end.time,
                     'activities': next_meeting.activities,
                     }
-    return render(request, 'events/call_down.html', context_dict)
+    """
+    context_dict = {'meeting_scheduled': meeting_scheduled,
+                    'next_meeting': next_meeting,}
+    return render(request, 'events/call_down2.html', context_dict)
 
 
 def schedule(request):
