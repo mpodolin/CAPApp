@@ -24,7 +24,7 @@ def call_down(request):
                     'end': next_meeting.end.time,
                     'activities': next_meeting.activities,
                     }
-    return render(request, 'events/call_down.html', context_dict)
+    return render(request, 'events/call_down2.html', context_dict)
 
 
 def schedule(request):
