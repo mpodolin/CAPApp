@@ -86,8 +86,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'CAPAppDB',
-        'USER': os.environ['CAPAppDB_USERNAME'],
-        'PASSWORD': os.environ['CAPAppDB_PASSWORD'],
+        'USER': 'michaelpodolin',
+        'PASSWORD': 'dragon32167',
         'HOST': 'localhost',
         'PORT': '5432',
     }
