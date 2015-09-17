@@ -1,1 +1,1 @@
-web: gunicorn CAPApp.config.wsgi --log-file--
+web: gunicorn CAPApp.config.wsgi --log-file -
