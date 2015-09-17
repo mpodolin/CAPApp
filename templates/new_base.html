@@ -8,14 +8,14 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    <title>Off Canvas Reveal Menu Template for Bootstrap</title>
+    <title>SqadSites</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/jasny-bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/static/css/navmenu-reveal.css" rel="stylesheet">
+    <link href="/static/css/navmenu.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -28,8 +28,8 @@
   </head>
 
   <body>
-    <div class="navmenu navmenu-default navmenu-fixed-left">
-      <a class="navmenu-brand" href="#">Project name</a>
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+      <a class="navmenu-brand visible-md visible-lg" href="#">Project name</a>
       <ul class="nav navmenu-nav">
         <li><a href="/promotions/index/">Home</a></li>
         <li class="active"><a href="/events/call_down/">Call Down</a></li>
@@ -55,20 +55,37 @@
       </ul>
     </div>
 
-    <div class="canvas">
+<!--    <div class="canvas">
       <div class="navbar navbar-default navbar-fixed-top">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+         <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">-->
+
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <a class="navbar-brand" href="#">Squad Sites</a>
       </div>
 
       <div class="container">
-        {% block content %}
-
-        {% endblock %}
+          {% block content %}
+          {% endblock %}
       </div>
+<!--    </div><!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
