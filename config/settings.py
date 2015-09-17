@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'CAPAppDB',
-        'USER': 'michaelpodolin',
-        'PASSWORD': 'dragon32167',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': os.environ['CAPAppDB_NAME'],
+        'USER': os.environ['CAPAppDB_USERNAME'],
+        'PASSWORD': os.environ['CAPAppDB_PASSWORD'],
+        'HOST': os.environ['CAPAppDB_HOST'],
+        'PORT': os.environ['CAPAppDB_PORT'],
     }
 }
 
