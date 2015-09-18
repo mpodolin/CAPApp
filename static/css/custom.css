@@ -58,6 +58,8 @@
     color: #777;
     font-size:5vw;
     vertical-align: middle;
+    white-space: nowrap;
+    width: 1;
 }
 
 /* Calendar */

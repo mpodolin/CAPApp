@@ -36,8 +36,8 @@
       <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1443" max-vertical-offset="1935">
-              <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1965">
+              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -63,21 +63,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index2.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index2.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/promotions/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27631578" vertical-offset="0" max-vertical-offset="2415">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="2415">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_base.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new_base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/new_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.58" vertical-offset="66" max-vertical-offset="1650">
-              <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
+            <state vertical-scroll-proportion="0.10084034" vertical-offset="450" max-vertical-offset="1650">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,8 +108,8 @@
       <file leaf-file-name="call_down.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/events/call_down.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="675">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.375" vertical-offset="9" max-vertical-offset="675">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -165,16 +165,16 @@
         <option value="$PROJECT_DIR$/static/css/jasny-bootstrap.css" />
         <option value="$PROJECT_DIR$/promotions/views.py" />
         <option value="$PROJECT_DIR$/templates/promotions/pt.html" />
-        <option value="$PROJECT_DIR$/templates/events/call_down.html" />
         <option value="$PROJECT_DIR$/templates/registration/char_dev.html" />
         <option value="$PROJECT_DIR$/templates/char_dev.html" />
         <option value="$PROJECT_DIR$/events/views.py" />
         <option value="$PROJECT_DIR$/events/urls.py" />
         <option value="$PROJECT_DIR$/templates/events/char_dev.html" />
-        <option value="$PROJECT_DIR$/templates/new_base.html" />
-        <option value="$PROJECT_DIR$/static/css/custom.css" />
         <option value="$PROJECT_DIR$/templates/promotions/profile.html" />
         <option value="$PROJECT_DIR$/templates/promotions/index2.html" />
+        <option value="$PROJECT_DIR$/templates/events/call_down.html" />
+        <option value="$PROJECT_DIR$/static/css/custom.css" />
+        <option value="$PROJECT_DIR$/templates/new_base.html" />
       </list>
     </option>
   </component>
@@ -679,7 +679,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3510929" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296131" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329235" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26618704" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26618704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1073,14 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/events/call_down.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="675">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/events/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.92" vertical-offset="987" max-vertical-offset="1680">
@@ -1115,22 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/new_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.58" vertical-offset="66" max-vertical-offset="1650">
-          <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1443" max-vertical-offset="1935">
-          <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/promotions/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="525">
@@ -1141,8 +1117,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/promotions/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27631578" vertical-offset="0" max-vertical-offset="2415">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="2415">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/events/call_down.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.375" vertical-offset="9" max-vertical-offset="675">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1965">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10084034" vertical-offset="450" max-vertical-offset="1650">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
