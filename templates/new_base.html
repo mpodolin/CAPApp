@@ -17,6 +17,12 @@
     <!-- Custom styles for this template -->
     <link href="/static/css/navmenu.css" rel="stylesheet">
 
+    <!-- Author made CSS -->
+    <link href="/static/css/custom.css" rel="stylesheet">
+
+    <!-- Logo font -->
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -27,14 +33,14 @@
     <![endif]-->
   </head>
 
-  <body>
-    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
-      <a class="navmenu-brand visible-md visible-lg" href="#">Project name</a>
+  <body id="bootstrap-overrides">
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm role="navigation"">
+      <a class="navmenu-brand visible-md visible-lg" href="#">Squad Sites</a>
       <ul class="nav navmenu-nav">
-        <li><a href="/promotions/index/">Home</a></li>
-        <li class="active"><a href="/events/call_down/">Call Down</a></li>
-        <li><a href="/events/schedule/">Calendar</a></li>
-        <li><a href="/promotions/pt/">PT</a></li>
+        <li class=" primary-nav"><a href="/promotions/index/">Home</a></li>
+        <li class=" primary-nav"><a href="/events/calldown/">Call Down</a></li>
+        <li class=" primary-nav"><a href="/events/schedule/">Calendar</a></li>
+        <li class=" primary-nav"><a href="/promotions/pt/">PT</a></li>
       </ul>
       <ul class="nav navmenu-nav">
         <li><a href="#">Link</a></li>
@@ -61,7 +67,6 @@
 
     <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
       <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
-
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -74,7 +79,7 @@
           {% endblock %}
       </div>
 <!--    </div><!-- /.container -->
-
+<div class="overlay"></div>
 
 
 

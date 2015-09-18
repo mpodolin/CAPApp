@@ -1,14 +1,28 @@
 {% extends 'new_base.html' %}
 
 {% block content %}
- <p>
-     {% if user.is_authenticated %}
-        Sit+Reach {{ sit_and_reach }} </br>
-        Sit Ups {{ sit_ups }} </br>
-        Push Ups {{ push_ups }} </br>
-        Mile {{ mile_run }} </br>
-     {% else %}
-        You're out
-     {% endif %}
- </p>
+
+  <div class="page-header">
+    <h1 class="title">PT Test</h1>
+  </div>
+
+  <table class="table borderless">
+    <tr class="pt-row">
+      <td class="pt-event text-left">Mile</td>
+      <td class="pt-score text-right">{{ mile_run }}</td>
+    </tr>
+    <tr class="pt-row">
+      <td class="pt-event text-left">Push Ups</td>
+      <td class="pt-score text-right">{{ push_ups }}</td>
+    </tr>
+    <tr class="pt-row">
+      <td class="pt-event text-left">Sit Ups</td>
+      <td class="pt-score text-right">{{ sit_ups }}</td>
+    </tr>
+    <tr class="pt-row">
+      <td class="pt-event text-left">Sit+Reach</td>
+      <td class="pt-score text-right">{{ sit_and_reach }}</td>
+    </tr>
+  </table>
+
 {% endblock %}

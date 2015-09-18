@@ -1,15 +1,29 @@
 {% extends 'new_base.html' %}
 
 {% block content %}
- <p>
-     {% if user.is_authenticated %}
-        Last Name {{ last_name }} </br>
-        Cap ID {{ capid }} </br>
-        Rank {{ rank }} </br>
-        Weeks in Rank {{ time_in_grade }} </br>
-        time joined {{ time }}
-     {% else %}
-        You're out
-     {% endif %}
- </p>
+
+  <div class="page-header">
+    <h1 class="title">Profile</h1>
+  </div>
+
+  <table class="table table-responsive">
+    <tr class="profile-row">
+      <td class="profile-label text-left">Last Name</td>
+      <td class="profile-info text-right">{{ last_name }}</td>
+    </tr>
+    <tr class="profile-row">
+      <td class="profile-label text-left">CAP ID</td>
+      <td class="profile-info text-right">{{ capid }}</td>
+    </tr>
+    <tr class="profile-row">
+      <td class="profile-label text-left">Rank</td>
+      <td class="profile-info text-right">{{ rank }}</td>
+    </tr>
+    <tr class="profile-row">
+      <td class="profile-label text-left">Weeks in Rank</td>
+      <td class="profile-info text-right">{{ time_in_grade }}</td>
+    </tr>
+  </table>
+
 {% endblock %}
+

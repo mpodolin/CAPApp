@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
 }
@@ -43,4 +44,17 @@ body {
   .navbar {
     display: none !important; /* IE8 fix */
   }
+}
+
+.container-slid:after,
+.container-sliding:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: auto;
+    z-index: 9999;
+    background: rgba(0,0,0,0.5) !important;
+    background: url(./alpha.png);
 }

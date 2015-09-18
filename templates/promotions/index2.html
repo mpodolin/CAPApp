@@ -1,0 +1,156 @@
+{% extends 'new_base.html' %}
+
+{% block content %}
+
+  <div class="page-header">
+    <h1 class="title">Promotion</h1>
+  </div>
+
+  <table class="table borderless" id="promotion-table">
+    {% if user.leadership_test != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-status text-left">
+          {% if user.leadership_test == 'C' %}
+            <span class="glyphicon glyphicon-ok done"></span>
+            <s class="done">
+              <span class="promotion-rec done">&nbsp;Leadership</span>
+            </s>
+          {% else %}
+            <a href="https://www.capnhq.gov/CAP.CadetTesting.Web/Modules/LeadershipTests.aspx">
+              <span class="glyphicon glyphicon-remove"></span>
+              <span class="promotion-rec">&nbsp;Leadership</span>
+            </a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.aerospace_test != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-status text-left">
+          {% if user.aerospace_test == 'C' %}
+            <span class="glyphicon glyphicon-ok done"></span>
+            <s class="done">
+              <span class="promotion-rec done">&nbsp;Aerospace</span>
+            </s>
+          {% else %}
+            {% if user.current_rank <= 9 %}
+              <a href="https://www.capnhq.gov/CAP.CadetTesting.Web/Modules/Aerospace2ndEdition.aspx">
+                <span class="glyphicon glyphicon-remove"></span>
+                <span class="promotion-rec">&nbsp;Aerospace</span>
+              </a>
+            {% else %}
+              <a href="https://www.capnhq.gov/CAP.CadetTesting.Web/Modules/JoFTests.aspx">
+                <span class="glyphicon glyphicon-remove"></span>
+                <span class="promotion-rec">&nbsp;Aerospace</span>
+              </a>
+            {% endif %}
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.drill_test != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-status text-left">
+          {% if user.drill_test == 'C' %}
+            <span class="glyphicon glyphicon-ok done"></span>
+            <s class="done">
+              <span class="promotion-rec done">&nbsp;Drill Test</span>
+            </s>
+          {% else %}
+            <a href="http://www.capmembers.com/media/cms/CAPT_782_Drill_Test_FINAL_0D0A619D59581.pdf">
+              <span class="glyphicon glyphicon-remove"></span>
+              <span class="promotion-rec">&nbsp;Drill Test</span>
+            </a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.fitness_test != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-status text-left">
+          {% if user.fitness_test == 'C' %}
+            <span class="glyphicon glyphicon-ok done"></span>
+            <s class="done">
+              <span class="promotion-rec done">&nbsp;PT Test</span>
+            </s>
+          {% else %}
+            <a href="/promotions/pt/">
+              <span class="glyphicon glyphicon-remove"></span>
+              <span class="promotion-rec">&nbsp;PT Test</span>
+            </a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.character_development != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-status text-left">
+          {% if user.character_development == 'C' %}
+            <span class="glyphicon glyphicon-ok done"></span>
+            <s class="done">
+              <span class="promotion-rec done">&nbsp;Char Dev</span>
+            </s>
+          {% else %}
+            <a href="/events/char_dev/">
+              <span class="glyphicon glyphicon-remove"></span>
+              <span class="promotion-rec">&nbsp;Char Dev</span>
+            </a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.sda != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-status text-left">
+          {% if user.sda == 'C' %}
+            <span class="glyphicon glyphicon-ok done"></span>
+            <s class="done">
+              <span class="promotion-rec done">&nbsp;SDA</span>
+            </s>
+          {% else %}
+            <a href="https://goo.gl/tKn0ON">
+              <span class="glyphicon glyphicon-remove"></span>
+              <span class="promotion-rec">&nbsp;SDA</span>
+            </a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.speech != '' %}
+      <tr class="promotion-row">
+        <td class="promotion-status text-left">
+          {% if user.speech == 'C' %}
+            <span class="glyphicon glyphicon-ok done"></span>
+            <s class="done">
+              <span class="promotion-rec done">&nbsp;Speech</span>
+            </s>
+          {% else %}
+            <a href="http://goo.gl/OCoswt">
+              <span class="glyphicon glyphicon-remove"></span>
+              <span class="promotion-rec">&nbsp;Speech</span>
+            </a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.essay != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-status text-left">
+          {% if user.essay == 'C' %}
+            <span class="glyphicon glyphicon-ok done"></span>
+            <s class="done">
+              <span class="promotion-rec done">&nbsp;Essay</span>
+            </s>
+          {% else %}
+            <a href="http://goo.gl/BMIGPd">
+              <span class="glyphicon glyphicon-remove"></span>
+              <span class="promotion-rec">&nbsp;Essay</span>
+            </a>
+          {% endif %}
+
+        </td>
+      </tr>
+   {% endif %}
+  </table>
+
+{% endblock %}

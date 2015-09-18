@@ -1,0 +1,124 @@
+/* General */
+.page-header {
+    color: #fafbfc;
+}
+.title {
+    color: #505153;
+
+}
+.table-responsive {}
+.table {}
+.char_dev {
+    color: #505153;
+    font-weight: bolder;
+    font-size: 11vh;
+    line-height: 95%;
+}
+
+/* Index */
+.promotion-row {}
+.promotion-rec {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 9vw;
+    vertical-align: middle;
+}
+.promotion-status {
+    color: #777;
+}
+.glyphicon {}
+.glyphicon-ok {
+    color: #2ecc71;
+    font-size: 11vw;
+    vertical-align: middle;
+}
+.glyphicon-remove {
+    color: #e74c3c;
+    font-size: 11vw;
+    vertical-align: middle;
+}
+.done{
+    color: #2ecc71;
+    font-size: 9vw;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+/* Call Down */
+.call-down-row {}
+.call-down-label {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 7vw;
+    vertical-align: middle;
+}
+.call-down-info {
+    color: #777;
+    font-size:5vw;
+    vertical-align: middle;
+}
+
+/* Calendar */
+.schedule-month {}
+.even {}
+.event-name {}
+.event-start {}
+.event-location {}
+
+/* PT */
+.pt-row {}
+.pt-event {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+.pt-score {
+    color: #777;
+}
+
+/* Profile */
+.profile-row {}
+.profile-label {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+.profile-info {
+    color: #777;
+}
+
+/* Base Template */
+body {
+    background-color: #f0f0f1;
+}
+.navmenu {
+    background-color: #ecf0f1;
+}
+.navbar {
+    background-color: #505153;
+}
+.primary-nav {
+    font-weight: bold;
+    color: #ecf0f1;
+    font-size: 1.5em;
+}
+#bootstrap-overrides .navbar-brand{
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: Bangers;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#bootstrap-overrides .navmenu-brand {
+    counter-reset: #2ecc71;
+    font-weight: bold;
+    font-family: Bangers;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none;
+}

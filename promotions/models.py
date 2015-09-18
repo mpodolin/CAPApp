@@ -13,8 +13,6 @@ class Cadet(AbstractUser):
     cadet_staff   = models.BooleanField(default=False)
     commander     = models.BooleanField(default=False)
 
-    timetest = models.TimeField(default=timezone.now, blank=True)
-
     # Gender Options
     FEMALE         = 'F'
     MALE           = 'M'

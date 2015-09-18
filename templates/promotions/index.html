@@ -1,35 +1,108 @@
 {% extends 'new_base.html' %}
 
 {% block content %}
- <p>
-     {% if user.is_authenticated %}
-        {% if user.leadership_test != 'N' %}
-            {{ leadership }} Leadership </br>
-        {% endif %}
-        {% if user.aerospace_test != 'N' %}
-            {{ aerospace }} Aerospace </br>
-        {% endif %}
-        {% if user.drill_test != 'N' %}
-            {{ drill }} Drill Test </br>
-        {% endif %}
-        {% if user.fitness_test != 'N' %}
-            {{ fitness }} PT Test </br>
-        {% endif %}
-        {% if user.character_development != 'N' %}
-            {{ character }} Character Dev </br>
-        {% endif %}
-        {% if user.sda != 'N' %}
-            {{ sda }} SDA </br>
-        {% endif %}
-        {% if user.speech != 'N' %}
-            {{ speech }} Speech </br>
-        {% endif %}
-        {% if user.essay != 'N' %}
-            {{ essay }} Essay </br>
-        {% endif %}
-     {% else %}
-        You're out
-     {% endif %}
- </p>
+
+  <div class="page-header">
+    <h1 class="title">Promotion</h1>
+  </div>
+
+  <table class="table table-responsive">
+    {% if user.leadership_test != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-rec text-left">Leadership</td>
+        <td class="promotion-status text-right">
+          {% if user.leadership_test == 'C' %}
+            <span class="glyphicon glyphicon-ok"></span>
+          {% else %}
+            <span class="glyphicon glyphicon-remove"></span>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.aerospace_test != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-rec text-left">Aerospace</td>
+        <td class="promotion-status text-right">
+          {% if user.aerospace_test == 'C' %}
+            <span class="glyphicon glyphicon-ok"></span>
+          {% else %}
+            <span class="glyphicon glyphicon-remove"></span>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.drill_test != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-rec text-left">Drill Test</td>
+        <td class="promotion-status text-right">
+          {% if user.drill_test == 'C' %}
+            <span class="glyphicon glyphicon-ok"></span>
+          {% else %}
+            <span class="glyphicon glyphicon-remove"></span>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.fitness_test != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-rec text-left">PT Test</td>
+        <td class="promotion-status text-right">
+          {% if user.fitness_test == 'C' %}
+            <span class="glyphicon glyphicon-ok"></span>
+          {% else %}
+            <span class="glyphicon glyphicon-remove"></span>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.character_development != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-rec text-left">Character Dev</td>
+        <td class="promotion-status text-right">
+          {% if user.character_development == 'C' %}
+            <span class="glyphicon glyphicon-ok"></span>
+          {% else %}
+            <i class="glyphicon glyphicon-remove"></i>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.sda != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-rec text-left">SDA</td>
+        <td class="promotion-status text-right">
+          {% if user.sda == 'C' %}
+            <span class="glyphicon glyphicon-ok"></span>
+          {% else %}
+            <span class="glyphicon glyphicon-remove"></span>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.speech != '' %}
+      <tr class="promotion-row">
+        <td class="promotion-rec text-left">Speech</td>
+        <td class="promotion-status text-right">
+          {% if user.speech == 'C' %}
+            <span class="glyphicon glyphicon-ok"></span>
+          {% else %}
+            <span class="glyphicon glyphicon-remove"></span>
+          {% endif %}
+        </td>
+      </tr>
+    {% endif %}
+    {% if user.essay != 'N' %}
+      <tr class="promotion-row">
+        <td class="promotion-rec text-left">Essay</td>
+        <td class="promotion-status text-right">
+          {% if user.essay == 'C' %}
+            <span class="glyphicon glyphicon-ok"></span>
+          {% else %}
+            <span class="glyphicon glyphicon-remove"></span>
+          {% endif %}
+        </td>
+      </tr>
+   {% endif %}
+  </table>
 
 {% endblock %}

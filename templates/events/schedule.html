@@ -1,32 +1,42 @@
 {% extends 'new_base.html' %}
 
 {% block content %}
-     {% if user.is_authenticated %}
-         <h1>{{ first_month_name }}</h1>
-        {% for event in first_month_meeting %}
-            <p>{{ event.name }}</p>
-            <p>{{ event.start|date:"jS" }} at {{ event.start.time }}</p>
-            <p>At {{ event.location }}</p>
-            </br>
-        {% endfor %}
 
-        <h1>{{ second_month_name }}</h1>
-        {% for event in second_month_meeting %}
-            <p>{{ event.name }}</p>
-            <p>{{ event.start|date:"jS" }} at {{ event.start.time }}}</p>
-            <p>At {{ event.location }}</p>
-            </br>
-        {% endfor %}
+  <div class="page-header">
+    <h1 class="title">Schedule</h1>
+  </div>
 
-        <h1>{{ third_month_name }}</h1>
-        {% for event in third_month_meeting %}
-            <p>{{ event.name }}</p>
-            <p>{{ event.start|date:"jS" }} at {{ event.start.time }}</p>
-            <p>At {{ event.location }}</p>
-            </br>
-        {% endfor %}
-     {% else %}
-        You're out
-     {% endif %}
+  <h2 class="schedule-month">{{ first_month_name }}</h2>
+    {% for event in first_month_meeting %}
+       <a href="#" class="event">
+         <blockquote>
+           <p class="event-name">{{ event.title }}</p>
+           <small class="event-start">{{ event.start|date:"jS" }} at {{ event.start.time }}</small>
+           <small class="event-location">At {{ event.location }}</small>
+         </blockquote>
+       </a>
+    {% endfor %}
+
+  <h2 class="schedule-month">{{ second_month_name }}</h2>
+    {% for event in second_month_meeting %}
+       <a href="#" class="event">
+         <blockquote>
+           <p class="event-name">{{ event.title }}</p>
+           <small class="event-start">{{ event.start|date:"jS" }} at {{ event.start.time }}</small>
+           <small class="event-location">At {{ event.location }}</small>
+         </blockquote>
+       </a>
+    {% endfor %}
+
+  <h2 class="schedule-month">{{ third_month_name }}</h2>
+    {% for event in third_month_meeting %}
+       <a href="#" class="event">
+         <blockquote>
+           <p class="event-name">{{ event.title }}</p>
+           <small class="event-start">{{ event.start|date:"jS" }} at {{ event.start.time }}</small>
+           <small class="event-location">At {{ event.location }}</small>
+         </blockquote>
+       </a>
+    {% endfor %}
 
 {% endblock %}

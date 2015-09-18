@@ -2,9 +2,11 @@ from django.shortcuts import render
 from .models import Event
 from promotions.models import Cadet
 from django.utils import timezone
+from django.contrib.auth.decorators import login_required
 from dateutil import relativedelta
 
 # Selects the next weekly meeting of the squadron for the call down
+@login_required()
 def call_down(request):
     # Find the squadron of the current cadet
     current_cadet = Cadet.objects.get(username=request.user.get_username())
@@ -36,9 +38,10 @@ def call_down(request):
     """
     context_dict = {'meeting_scheduled': meeting_scheduled,
                     'next_meeting': next_meeting,}
-    return render(request, 'events/call_down2.html', context_dict)
+    return render(request, 'events/call_down.html', context_dict)
 
 
+@login_required()
 def schedule(request):
     # Find the squadron of the current cadet
     current_cadet = Cadet.objects.get(username=request.user.get_username())
@@ -98,3 +101,7 @@ def schedule(request):
                     'second_month_name': second_month_name,
                     'third_month_name': third_month_name,}
     return render(request, 'events/schedule.html', context_dict)
+
+
+def char_dev(request):
+    return render(request, 'events/char_dev.html', {})
