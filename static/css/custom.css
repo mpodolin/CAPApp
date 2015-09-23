@@ -76,9 +76,16 @@
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
+    font-size: 7vw;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 .pt-score {
     color: #777;
+    font-size:5vw;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 30%;
 }
 
 /* Profile */
